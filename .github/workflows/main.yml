@@ -6,7 +6,7 @@ on:
       agent_name:
         description: 'doccafie'
         required: true
-        default: 'finder'
+        default: 'doccafie'
       agent_description:
         description: 'doccafie'
         required: true
@@ -38,4 +38,4 @@ jobs:
 
       - name: Step 3 - Link Human to Agent
         run: |
-          node scripts/manualLinkHumanToAgent.js --challenge '{"name": "finder", "description": "finder AI Agent"}'
+          node scripts/manualLinkHumanToAgent.js --challenge '{"name": "doccafie", "description": "doccafie AI Agent"}'
